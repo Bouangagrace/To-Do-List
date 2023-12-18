@@ -1,6 +1,6 @@
 
 body {
-    background-color: #3498db; /* Couleur bleue pour le fond du body */
+    background-color: #3498db;
     margin: 0;
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -9,20 +9,42 @@ body {
     justify-content: center;
     height: 100vh;
 }
-h1 , p{
-    color: #f8f3f3;
-}
-p{
-    font-size: 20px;
-}
 
 .container {
     height: 500px;
     width: 700px;
-    background-color: #fff; /* Couleur de fond de la boîte contenant les éléments */
+    background-color: #fff;
     padding: 20px;
-    border-radius: 20px; /* Coins arrondis pour un aspect plus doux */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Effet de box shadow */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour les écrans plus petits */
+@media screen and (max-width: 600px) {
+    body{
+        margin: 15px;
+    }
+    .container {
+        width: 90%; /* Ajustez la largeur en fonction de vos besoins */
+    }
+
+    #taskInput {
+        width: 100%; /* Pour occuper la largeur de l'écran */
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #addTaskButton, #clearTasksButton {
+        width: 100%; /* Pour occuper la largeur de l'écran */
+    }
+}
+
+h1, p {
+    color: #f8f3f3;
+}
+
+p {
+    font-size: 20px;
 }
 
 #taskInput {
@@ -30,6 +52,7 @@ p{
     margin-right: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 60%; /* Ajustez la largeur en fonction de vos besoins */
 }
 
 #addTaskButton, #clearTasksButton {
@@ -37,12 +60,12 @@ p{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    background-color: #2ecc71; /* Couleur verte pour les boutons */
-    color: #fff; /* Couleur du texte des boutons */
+    background-color: #2ecc71;
+    color: #fff;
 }
 
 #addTaskButton:hover, #clearTasksButton:hover {
-    background-color: #27ae60; /* Couleur de survol des boutons */
+    background-color: #27ae60;
 }
 
 ul {
@@ -62,7 +85,7 @@ ul {
 
 .completed {
     text-decoration: line-through;
-    color: #7f8c8d; /* Couleur gris pour les tâches terminées */
+    color: #7f8c8d;
 }
 
 button {
