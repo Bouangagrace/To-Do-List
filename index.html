@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <h1>Bienvenu sur ma to do list </h1>
+    <p>Une To-Do list est une liste des choses a faire , <br> vous pouvez ajoutez supprimer et modifié des élémenent dans liste</p>
+    <div class="container">
+        <h2>To-Do List</h2>
+        <input type="text" id="taskInput" placeholder="Ajouter une tache">
+        <button onclick="addTask()">+</button>
+        <button id="modifyTasksButton" onclick="modifyTasks()">Modifier les tâches</button>
+
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
